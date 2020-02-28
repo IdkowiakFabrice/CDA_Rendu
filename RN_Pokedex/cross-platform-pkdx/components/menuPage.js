@@ -20,10 +20,21 @@ export default function Pokedex({ navigation }) {
 
 };
 
+function getDetailPokemon(linkPokemon) {
+    return fetch(linkPokemon)
+        .then((response) => response.json())
+        .then((responseJson) => {
+        return responseJson;
+        })
+        .catch((error) => {
+        console.error(error);
+        });
+    }
 function addIndex(pokedex){
     let i = 1
     pokedex = pokedex.map(function(element) {
         element.index = i
+        element.detail = getDetailPokemon(element.url)
         element.image = `https://pokeres.bastionbot.org/images/pokemon/${i}.png`
         i = i+1
         return element
@@ -43,7 +54,7 @@ function addIndex(pokedex){
                     activeOpacity={0.7}
                     onPress={() => navigation.navigate('DetailsPage', {
                         pokemonId: pokemon.index,
-                        pokemonDetails : pokedex[pokemon.index]
+                        pokemonDetails : pokemon,
                     })}
                 />
             </View>
