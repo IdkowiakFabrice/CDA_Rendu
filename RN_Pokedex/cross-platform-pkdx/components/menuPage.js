@@ -17,7 +17,6 @@ export default function Pokedex({ navigation }) {
         );
         const pokedex = await data.json();
         setPokedex(pokedex.results);
-
 };
 
 function getDetailPokemon(linkPokemon) {
@@ -30,6 +29,7 @@ function getDetailPokemon(linkPokemon) {
         console.error(error);
         });
     }
+
 function addIndex(pokedex){
     let i = 1
     pokedex = pokedex.map(function(element) {

@@ -15,7 +15,7 @@ export default class App extends React.Component {
     return (
       <NavigationContainer>
         <Header
-          centerComponent={{ icon: 'album', color: '#fff' }}
+          leftComponent={{ icon: 'arrow-back', color: '#fff', }}
           rightComponent={{ icon: 'account-box', color: '#fff' }}
           containerStyle={{
               backgroundColor: 'grey',
