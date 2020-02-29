@@ -13,7 +13,7 @@ export default function Pokedex({ navigation }) {
 
     const fetchPokedex = async () => {
         const data = await fetch(
-            'https://pokeapi.co/api/v2/pokemon?limit=10'
+            'https://pokeapi.co/api/v2/pokemon?limit=1000'
         );
         const pokedex = await data.json();
         setPokedex(pokedex.results);
@@ -43,11 +43,11 @@ function addIndex(pokedex){
   return (
         <ScrollView>
         {addIndex(pokedex)}
-        <Text>Pokedex</Text>
+        <Text style={{alignSelf:'center', fontSize:30}}>Pokedex</Text>
         
         {pokedex.map(pokemon =>(
-            <View>
-                <Text>{pokemon.name}</Text>
+            <View style={{flexDirection:'row', alignItems:'center', marginBottom:10, alignSelf:'center'}}>
+                <Text style={{fontSize:20,paddingRight:10, backgroundColor:'#c3c4d1'}}>{pokemon.name}</Text>
                 <Avatar
                     size="large"
                     source={{ uri: pokemon.image }} 
