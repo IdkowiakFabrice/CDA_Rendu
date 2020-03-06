@@ -1,7 +1,8 @@
 import React from "react";
-import {View, Text, StyleSheet, StatusBar} from "react-native";
+import {View, Text, StyleSheet, StatusBar, Image} from "react-native";
 import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
 import * as firebase from "firebase";
+//import { ThemeColors } from "react-navigation";
 
 export default class LoginScreen extends React.Component {
     static navigationOptions = {
@@ -24,8 +25,10 @@ export default class LoginScreen extends React.Component {
         return (
             <View style={styles.container}>
                 <StatusBar barStyle="light-content"></StatusBar>
+                <Image source = {require("../assets/pokeball.png")} style={{ marginLeft:100, marginTop:100}}></Image>
+
                 <View style={styles.errorMessage}>
-                    {this.state.errorMessage && <Text style={styles.error}>{this.state.errorMessage}</Text>}
+        {this.state.errorMessage && <Text style={styles.error}>{this.state.errorMessage}</Text>}
                 </View>
 
                 <View style={styles.form}>
@@ -70,7 +73,7 @@ export default class LoginScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex : 1,
-        backgroundColor:"#c3c4d1"
+        backgroundColor:"black"
     },
     greeting: {
         marginTop: 32,

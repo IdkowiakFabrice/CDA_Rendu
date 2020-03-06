@@ -2,6 +2,7 @@ import React from "react";
 import {View, Text, StyleSheet, StatusBar, Image} from "react-native";
 import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
 import * as firebase from "firebase";
+//import { ThemeColors } from "react-navigation";
 
 export default class RegisterScreen extends React.Component {
     state = {

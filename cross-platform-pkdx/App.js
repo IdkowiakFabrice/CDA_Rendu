@@ -1,10 +1,10 @@
-import Pokedex from './Screens/Pokedex'
-import Pokemon from './Screens/Pokemons';
+import Pokedex from './screens/Pokedex'
+import Pokemon from './screens/Pokemons';
 import {createAppContainer, createSwitchNavigator} from 'react-navigation'
 import {createStackNavigator} from 'react-navigation-stack'
-import LoadingScreen from './Screens/LoadingScreen'
-import LoginScreen from './Screens/LoginScreen.js'
-import RegisterScreen from './Screens/RegisterScreen'
+import LoadingScreen from './screens/LoadingScreen'
+import LoginScreen from './screens/LoginScreen.js'
+import RegisterScreen from './screens/RegisterScreen'
 import * as firebase from 'firebase'
 
 var firebaseConfig = {
