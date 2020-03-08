@@ -22,4 +22,4 @@ Pokedex screen:
 
 Pokemon details screen:
 
-<img src = 'https://media.discordapp.net/attachments/685505523998523392/685916713216507921/Screenshot_20200307_192646_host.exp.exponent.jpg?width=310&height=672'>
+<img src = 'https://media.discordapp.net/attachments/685505523998523392/686274543018704916/Screenshot_20200308_190920_host.exp.exponent.jpg?width=310&height=672'>
