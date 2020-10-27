@@ -1,0 +1,78 @@
+.centrer {
+    align-content: center !important;
+    text-align: center !important;
+}
+
+.avatar {
+    width: 10%;
+    height: 10%;
+}
+
+.header {
+    background-color: #1e1d1c;
+    margin-bottom:  10px;
+}
+.headerTitle {
+    color: #07af1d;
+}
+.headerUser {
+    margin-right: 0;
+}
+
+.row {
+    align-items: center;
+    text-align: center;
+}
+
+.userName {
+    background-color: #07af1d;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.twitter {
+    background-color: #2bdfff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.location {
+    background-color: #07af1d;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.email {
+    background-color: #07af1d;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.company {
+    background-color: #07af1d;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.abonnes {
+    background-color: #07af1d;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.abonnements {
+    background-color: #07af1d;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.test {
+    color: #07af1d;
+}
