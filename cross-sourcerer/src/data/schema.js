@@ -1,4 +1,5 @@
 import {gql} from '@apollo/client'
+console.log(process.env)
 
 const login = `"${process.env.REACT_APP_GITHUB_LOGIN.toString()}"`
 
@@ -12,6 +13,7 @@ export const infoUser = gql`
       bioHTML
       location
       avatarUrl
+      company
       url
       followers {
         totalCount
@@ -19,7 +21,7 @@ export const infoUser = gql`
       following {
         totalCount
       }
-      repositories(first: 100) {
+      repositories(first: 100, orderBy: {field: PUSHED_AT, direction: DESC}) {
         nodes {
           name
           stargazerCount
